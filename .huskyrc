@@ -1,0 +1,5 @@
+{
+    "husky":{
+        "pre-commit":"npm run test:unit && npm run lint"
+    }
+}

@@ -1,0 +1,11 @@
+.git*
+.eslint*
+.editor*
+build/**
+config/**
+test/**
+.vscode/**
+coverage/**
+.nyc_output/**
+ 
+.npmignore

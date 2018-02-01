@@ -1,0 +1,18 @@
+# These will be the default owners for everything in the repo
+
+#* @VivintSolar/inception
+
+
+# The tech lead is responsible for approving all dependency changes, but there needs to be a secondary reviewer
+
+#package.json  @VivintSolar/inception
+
+
+# The tech lead is responsible for .git/.github settings
+
+#.git* @VivintSolar/inception
+
+
+# Devops knows best
+
+Jenkinsfile @VivintSolar/devops

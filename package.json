@@ -1,0 +1,56 @@
+{
+  "name": "@vivintsolar/template-basic",
+  "version": "1.0.0",
+  "description": "...",
+  "author": "Vivint Solar",
+  "main": "./index.js",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VivintSolar/template-basic"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">2.14.7"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prestart": "credstash-loader",
+    "start": "node .",
+    "mocha": "mocha",
+    "pretest": "NODE_ENV=test credstash-loader",
+    "test": "npm run mocha -- --opts ./test/mocha.opts",
+    "test:watch": "npm run mocha -- --opts ./test/mocha.opts -w -b -R min",
+    "test:unit": "npm run mocha -- --opts ./test/mocha-unit.opts",
+    "test:unit:watch": "npm run test:unit -- -w -b -R min",
+    "test:int": "npm run mocha -- --opts ./test/mocha-integration.opts",
+    "test:int:watch": "npm run test:int -- -w -b -R min",
+    "test:acceptance": "npm run mocha -- --opts ./test/mocha-acceptance.opts",
+    "test:acceptance:watch": "npm run test:acceptance -- -w -b -R min",
+    "coverage": "nyc -r json-summary -r html --report-dir ./test/results/coverage npm run mocha"
+  },
+  "husky": {
+    "pre-commit": "npm run test:unit && npm run lint"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.186.0",
+    "debug": "^3.1.0",
+    "newrelic": "^2.6.1",
+    "pretty-bytes": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vivintsolar/credstash-loader": "^1.0.2",
+    "@vivintsolar/tftools": "^1.0.7",
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-vstg": "^2.1.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "husky": "^0.14.3",
+    "mocha": "^4.0.0",
+    "mocha-jenkins-reporter": "^0.3.5",
+    "nock": "^9.0.13",
+    "nyc": "^11.2.1"
+  }
+}

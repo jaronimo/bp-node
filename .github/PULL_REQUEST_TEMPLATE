@@ -1,0 +1,12 @@
+## Related Jira tickets
+!{TICKET-NUMBER}
+
+## Checklist
+- [ ] Commit messages follow [standards](https://kb.vstg.io/best-practices/git)
+- [ ] Atomic commits
+- [ ] Tests adjusted to address changes
+- [ ] Analytics adjusted to capture impact of change
+- [ ] Version commit added (if applicable)
+- [ ] Documentation
+- [ ] Reviewed by Pull Request author
+- [ ] Ready for review

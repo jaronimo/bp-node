@@ -1,0 +1,7 @@
+--reporter mocha-jenkins-reporter
+--reporter-options junit_report_path=./test/results/all-tests.xml
+--timeout 50000
+
+test/unit/**/*test.js
+test/acceptance/**/*test.js
+test/integration/**/*test.js

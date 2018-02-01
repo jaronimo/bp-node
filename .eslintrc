@@ -1,0 +1,16 @@
+{
+    "extends": "vstg",
+    "plugins": [
+        "filenames"
+    ],
+    "rules": {
+        "filenames/match-regex": [
+            "error",
+            "^[a-z0-9-]+$"
+        ],
+        "filenames/match-exported": [
+            "error",
+            "kebab"
+        ]
+    }
+}

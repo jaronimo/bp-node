@@ -1,0 +1,4 @@
+--reporter mocha-jenkins-reporter
+--reporter-options junit_report_path=./test/results/unit-tests.xml
+
+test/unit/**/*test.js
