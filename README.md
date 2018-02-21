@@ -1,6 +1,8 @@
 THIS IS A TEMPLATE. FIND & REPLACE ALL OCCURRENCES OF "TEMPLATE-BASIC" WITH YOUR PROJECT.
 # TEMPLATE-BASIC
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaronimo99/bp-node.svg)](https://greenkeeper.io/)
+
 <!-- Provide a description: What is the project for? What does it do? What is its purpose? -->
 Provides ... for interacting with the sentinel devices. It also has a [gui](https://...) for setting the wifi credentials on a device.
 
