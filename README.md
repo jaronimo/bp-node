@@ -5,10 +5,10 @@ THIS IS A TEMPLATE. FIND & REPLACE ALL OCCURRENCES OF "TEMPLATE-BASIC" WITH YOUR
 Provides ... for interacting with the sentinel devices. It also has a [gui](https://...) for setting the wifi credentials on a device.
 
 <!-- What is the architecture of this project? Replace the included chart with your own projects chart capturing the components of the project architecture. -->
-![Architecture](./architecture.png)
+<!--![Architecture](./architecture.png)-->
 
 <!-- What is the basic flow of data? Replace the 'Pull Process' steps below and provider your projects list of steps to understand the flow through your architecture diagram. -->
-### Pull Process
+<!--### Pull Process
   1. Jenkins cron job is started at 5 PM MST for each provider to curl list with the given date.
   2. List elastic beanstalk server (EBS) receives the request to start extracting the list of systems from the provider.
   3. The List Service saves the result of the extraction to S3.
@@ -19,7 +19,7 @@ Provides ... for interacting with the sentinel devices. It also has a [gui](http
   8. The <provider> extraction worker only pulls off a certain number of messages to enforce throttling and calls the extraction lambda with a system to process.
   9. The extraction lambda throttles the number of calls it makes to the provider, making several calls to extract system information.
   10. The extracted information is saved to S3.
-  11. The extracted event is emitted to SNS.
+  11. The extracted event is emitted to SNS.-->
  
 ## Information
 
@@ -69,7 +69,7 @@ npm start
 <!-- Is there any additional configuration that needs to happen? Adding AWS credentials? Lane specific config? -->
 
 * Configuration
-  * Done using credstash and credstash-loader
+  * Done using credstash and
 
 ## Testing
 
