@@ -1,8 +1,8 @@
 {
-  "name": "@vivintsolar/template-basic",
+  "name": "bp-node",
   "version": "1.0.0",
   "description": "...",
-  "author": "Vivint Solar",
+  "author": "Jaron Briggs",
   "main": "./index.js",
   "keywords": [],
   "license": "UNLICENSED",
